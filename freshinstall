@@ -1,0 +1,42 @@
+#!/bin/bash
+
+clear
+
+echo "welcome to ethaninstall! the download should start within 3 seconds"
+
+sleep 3
+
+
+sudo pacman -S git go
+
+cd 
+
+git clone https://aur.archlinux.org/yay
+cd yay
+makepkg -si
+
+yay -S kitty zsh fastfetch discord cmatrix-git asciiquarium-transparent-git cava spotify extension-manager firefox flatpak bpytop neovim pipes.sh tty-clock
+
+sleep 1
+
+clear
+
+echo "to help you out, i will get rid of gnomes browser, epiphany so you can enjoy firefox!"
+
+sleep 1
+
+clear
+
+sudo pacman -R epiphany
+
+echo "we're done with the apps! now time to install games so that you can play!"
+
+sleep 1 
+
+clear
+
+flatpak install sober
+
+clear
+
+echo "ALL DONE! ENJOY ARCH LINUX!" 
